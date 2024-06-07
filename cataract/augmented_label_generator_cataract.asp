@@ -18,8 +18,9 @@
 % the new matrix (thus, the new augmented image).
 
 % how to run:
-% dlv2-linux-64bit-python2.7/dlv2 augmented_label_generator_cataract.asp external_atoms.py <path_to_input_file_1> <path_to_input_file_2> <path_to_input_file_n> --silent --filter=new_cell/3 > output.txt
+% <path_to_dlv2_solver> augmented_label_generator_cataract.asp external_atoms.py <path_to_input_file_1> <path_to_input_file_2> <path_to_input_file_n> --silent --filter=new_cell/3 > output.txt
 % where:
+% - <path_to_dlv2_solver> is the path to the DLV2 solver
 % - <path_to_input_file_x> is a file containing all or some of the input facts
 % - output.txt is the file containing the output (note that, if the provided input violates one or more constraints, then output.txt will contain 'INCOHERENT')
 
