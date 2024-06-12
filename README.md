@@ -1,6 +1,11 @@
+The aim of this project is to create augmented labelled images from already existing ones. Specifically, two datasets were examined: the first includes images taken from a cataract operation, while the second involves images depicting vocal folds. The proposed approach generates the augmented labels by recombining various fragments from the original labels, through a logical program implemented in Anser Set Programming (ASP). The consistency of the resulting augmented image is ensured by the ASP program itself. The ASP programs responsible for generating augmented labels regarding cataract and vocal folds can be found in the ```cataract``` and ```vocalfolds``` folders, respectively.
+
+
 ## Prerequisites ##
- - DLV2 solver
- - Python 2.7
+In order to properly run the files, one must dispose of:
+ - DLV version 2.1.0 (static executables with support to Python external atoms is mandatory) - can be downloaded form the following link: https://dlv.demacs.unical.it/home
+ - Python 2.7 (this specific version of the Python interpreter is required in order to run the DLV solver)
+ - Linux x86_64
 
 
 ## Cataract ##
@@ -20,6 +25,7 @@ For each matrix, it must exist an atom of the form ```class(FILENAME)```, where:
 This program gives in output some facts in the form ```new_cell(R,C,CLASS)```, which represent the new matrix (thus, the new augmented image).
 
 ### How to run ###
+From the folder ```cataract``` run the following command:
 ```
 <path_to_dlv2_solver> augmented_label_generator_cataract.asp external_atoms.py <path_to_input_file_1> <path_to_input_file_2> <path_to_input_file_n> --silent --filter=new_cell/3 > output.txt
 ```
@@ -47,6 +53,7 @@ For each matrix, it must exist an atom of the form ```class(FILENAME)```, where:
 This program gives in output some facts in the form ```new_cell(R,C,CLASS)```, which represent the new matrix (thus, the new augmented image).
 
 ### How to run ###
+From the folder ```vocalfolds``` run the following command:
 ```
 <path_to_dlv2_solver> augmented_label_generator_vocalfolds.asp external_atoms.py <input_group> <input_background> <input_pathology> <input_intubation> <input_surgical_tool> --silent --filter=new_cell/3 > output.txt
 ```
