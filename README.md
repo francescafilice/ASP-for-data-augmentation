@@ -12,7 +12,7 @@ In order to properly run the ASP programs, one must dispose of:
 
 ### Input ###
 
-This program takes in input some matrices of 960x540 pixels, represented by facts in the following form: 
+The program ```augmented_label_generator_cataract.asp``` takes in input some matrices of 960x540 pixels, represented by facts in the following form: 
 ```
 cell(R,C,CLASS)
 ```
@@ -40,7 +40,7 @@ where:
 
 ### Input ###
 
-This program takes in input some matrices of 512x512 pixels, represented by facts in the following form: 
+The program ```augmented_label_generator_vocalfolds.asp``` takes in input some matrices of 512x512 pixels, represented by facts in the following form: 
 ```
 cell(R,C,CLASS)
 ```
