@@ -3,9 +3,9 @@ The aim of this project is to create augmented labelled images from already exis
 
 ## Prerequisites ##
 In order to properly run the ASP programs, one must dispose of:
- - DLV version 2.1.0 (static executables with support to Python external atoms is mandatory) - can be downloaded form the following link: https://dlv.demacs.unical.it/home
+ - DLV version 2.1.0 (static executables with support to Python external atoms is mandatory) - can be downloaded from the following link: https://dlv.demacs.unical.it/home
  - Python 2.7 (this specific version of the Python interpreter is required in order to run the DLV solver)
- - Linux x86_64
+ - Linux x86-64
 
 
 ## Cataract ##
